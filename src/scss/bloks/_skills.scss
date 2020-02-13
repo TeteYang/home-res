@@ -1,0 +1,32 @@
+.skills{
+    &_style{
+        min-height: 98vh;
+        background-color: #232325;
+        padding: 25vh 0 0 0;
+    }
+    &__phr{
+        font-family: 'Gilroy Medium Italic';
+        font-size: 32px;
+        text-align: center;
+        text-decoration: underline;
+    }
+    &__list{
+        font-size: 20px;
+        text-align: center;
+        margin: 5vh 0 0 0;
+    }
+    &__item{
+        max-width: 75vh;
+        margin: 0 auto;
+        list-style: none;
+        padding-left: 0;
+        line-height: 50px;
+        font-family: 'Gilroy Medium Italic';
+        font-weight: bold;
+    }
+    &__item_flex{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+    }
+}

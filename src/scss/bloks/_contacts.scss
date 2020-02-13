@@ -1,0 +1,29 @@
+.contact{
+    &__style{
+        min-height: 70vh;
+        background-color: #232325;
+    }
+    &__phr{
+        font-family: 'Gilroy Medium Italic';
+        font-size: 32px;
+        text-align: center;
+        text-decoration: underline;
+    }
+    &__links{
+        max-width: 80vh;
+        margin: 5vh auto;
+        font-size: 25px;
+        font-family: 'Gilroy Medium Italic';
+        text-align: center;
+        padding: 10px 10px;
+        line-height: 55px;
+        font-weight: bold;
+    }
+    .icon, .fas{
+        margin: 0 10px;
+    }
+    .link-git{
+        text-decoration: none;
+        color: white;
+    }
+}

@@ -1,0 +1,16 @@
+* body{
+    background-color: #232325;
+}
+
+@import "./base/fonts";
+@import "./base/media";
+@import "./base/mixins";
+@import "./base/variables";
+@import "./bloks/header";
+@import "./bloks/heder-animate";
+@import "./bloks/_header-nav";
+@import "./bloks/main-section";
+@import "./bloks/toggle-btn";
+@import "./bloks/skills";
+@import "./bloks/contacts";
+

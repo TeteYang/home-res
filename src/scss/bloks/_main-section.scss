@@ -1,0 +1,35 @@
+span{
+    color: red;
+}
+.main-section{
+    &_style{
+        min-height: 100vh;
+        background-color: #232325;
+    }
+    &__phr{
+        font-family: 'Gilroy Medium Italic';
+        padding: 10vh 0 0 0;
+        text-decoration: underline;
+        font-size: 39px;
+    }
+}
+.main-projects{
+    &__style{
+    max-width: 80vw;
+    margin: 5vh auto;
+}
+    &__info{
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        padding-left: 0;
+    }
+    &__tab .link-li{
+        color: white;
+        text-decoration: none;
+    }
+
+    &__tab:hover{
+        transform: scale(1.1);
+    }
+}

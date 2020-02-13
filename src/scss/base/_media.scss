@@ -1,0 +1,48 @@
+@media (max-width: 1200px){
+    .greet, .skills .skills__phr, .main-phr, .contact .contact__phr{
+        font-size: 38px;
+    }
+    .skills .skills__item_flex, .contact .link-git{
+        font-size: 27px;
+    }
+    }
+@media(max-width: 992px){
+    body .header .icon{
+        width: 45px;
+    }
+    .navbar-expand-lg .navbar-nav .nav-link{
+        font-size: 23px;
+    }
+    .navbar-nav{
+        text-align: center;
+    }
+}
+@media(max-width: 768px){
+    .greet, .skills .skills__phr, .main-phr, .contact .contact__phr{
+        font-size: 34px;
+    }
+}
+@media(max-width: 576px){
+   .skills .skills__item{
+       max-width: 55vh;
+   }
+   .skills .skills__item_flex, .contact .link-git{
+    font-size: 25px;
+}
+}
+@media(max-width: 539px){
+    .skills .skills__phr, .main-phr, .contact .contact__phr{
+        font-size: 34px;
+    }
+}
+@media(max-width: 430px){
+    .greet, .skills .skills__phr, .main-phr, .contact .contact__phr{
+        font-size: 31px;
+    }
+    .skills .skills__item_flex, .contact .link-git{
+        font-size: 23px;
+    }
+    .skills .skills__item{
+        max-width: 45vh;
+    } 
+}

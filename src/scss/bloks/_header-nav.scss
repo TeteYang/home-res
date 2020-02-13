@@ -1,0 +1,30 @@
+  .nav-head{
+      position: absolute;
+      top: 4%;
+      left: 3%;
+  }
+a {
+    padding: 0 20px 0 0;
+    text-decoration: none;
+    color:#fff;
+    text-align:center;
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size 1.2s;
+}
+a:nth-child(2):hover {
+    color:#e74c3c;
+  }
+  
+  a:nth-child(3):hover {
+    color:#BF55EC;
+  }
+  
+  a:nth-child(4):hover {
+    color:#f39c12;
+  }
+a:hover, a:focus {
+    background-size: 100% 2px;
+}
