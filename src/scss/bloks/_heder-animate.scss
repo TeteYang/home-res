@@ -8,11 +8,6 @@
     z-index: 1;
  }
  
- .demo .large-header {
-    max-width: 100vw;
-    padding-right: 20vw;
- }
- 
  .main-title {
     position: absolute;
     margin: 0;
@@ -25,11 +20,6 @@
     transform: translate3d(-50%, -50%, 0);
  }
  
- .demo .main-title {
-    text-transform: uppercase;
-    font-size: 4.2em;
-    letter-spacing: 0.1em;
- }
  
  .main-title .thin {
     font-weight: 200;

@@ -2,6 +2,11 @@
     position: absolute;
     top: 4%;
     left: 82%;
+    label .label{
+        @media (max-width: 576px) {
+            width: 93px;
+        }
+    }
 }
 .checkbox{
     display: none;
@@ -19,7 +24,6 @@
     cursor: pointer;
     transition: all 500ms ease;
     box-shadow: 0 0px 10px rgba(0, 0, 0, 0.2) inset;
-    
     &:before{
         content: 'RU';
         width: $btnWidth;

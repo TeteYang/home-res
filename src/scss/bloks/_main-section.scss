@@ -1,12 +1,9 @@
-span{
-    color: red;
-}
 .main-section{
     &_style{
         min-height: 100vh;
         background-color: #232325;
     }
-    &__phr{
+    &_phr{
         font-family: 'Gilroy Medium Italic';
         padding: 10vh 0 0 0;
         text-decoration: underline;
@@ -14,22 +11,44 @@ span{
     }
 }
 .main-projects{
-    &__style{
-    max-width: 80vw;
+    &_style{
+    max-width: 75vw;
     margin: 5vh auto;
-}
-    &__info{
-        list-style: none;
+    }
+    &__tab_style{
+        margin: 0 0 15vh 0;
+    }
+    &__tab_style:last-child{
+        margin: 0;
+    }
+    &__tab_item-style{
         display: flex;
-        justify-content: space-between;
-        padding-left: 0;
+        margin: 15px 5px;
     }
-    &__tab .link-li{
-        color: white;
-        text-decoration: none;
+    &__tab_text{
+        margin: 15px;
     }
-
-    &__tab:hover{
-        transform: scale(1.1);
+    &__title span{
+        color: red;
     }
+    &__tab_git{
+        margin: 20px 0;
+    }
+    &__tab_box span{
+        border: 1px solid rgba(255, 255, 255, 0.15);
+        padding: 5px;
+        border-radius: 3px;
+    }
+    &__tab_box span:first-child{
+        margin: 0 5px 0 0;
+    }
+}
+.main-projects__tab_style .img{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 40vw;
+    height: 40vh;
+    border-radius: 5px;
+    border: 1px solid #fd1a15;
 }

@@ -1,5 +1,12 @@
+//preloader
+window.onload = function () {
+    document.body.classList.add('loaded_hiding');
+    window.setTimeout(function () {
+      document.body.classList.add('loaded');
+      document.body.classList.remove('loaded_hiding');
+    }, 500);
+  }
 //translator
-
 let toggler = document.querySelector('input'),
     linkHome = document.querySelector('.link-home'),
     linkProject = document.querySelector('.link-proj'),
