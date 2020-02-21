@@ -9,7 +9,7 @@
         text-align: center;
         text-decoration: underline;
     }
-    .links{
+    .link{
         max-width: 80vh;
         margin: 5vh auto;
         font-size: 25px;
@@ -18,11 +18,11 @@
         padding: 10px 10px;
         line-height: 55px;
         font-weight: bold;
+        &__item{
+            text-decoration: none;
+        }
     }
     .icon, .fas{
         margin: 0 10px;
-    }
-    &__item{
-        text-decoration: none;
     }
 }

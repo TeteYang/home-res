@@ -1,11 +1,12 @@
 .toggle-btn{
-    position: absolute;
-    top: 4%;
-    left: 82%;
-    label .label{
-        @media (max-width: 576px) {
-            width: 93px;
-        }
+    &_style{
+        position: absolute;
+        top: 4%;
+        left: 82%;
+    }
+    &_btn{
+        position: relative;
+        padding: .5rem 1rem;
     }
 }
 .checkbox{
