@@ -71,3 +71,30 @@ toggler.addEventListener('change', function(e){
         boxContact.textContent = boxContactRu;
     }  
 });
+
+//scroll up
+
+let upPage = document.querySelector('a[href*="#up"]');
+console.log(upPage);
+window.addEventListener('scroll', whereScroll);
+
+function whereScroll(){
+    const scrolled = window.scrollY;
+    if (scrolled < 1600){
+        upPage.style.display = 'none';
+    }
+    else{
+        upPage.style.display = 'block';
+    }
+}
+
+upPage.addEventListener('click', slowScroll);
+
+function slowScroll(e){
+    e.preventDefault();
+    const blockID = upPage.getAttribute('href');
+    document.querySelector(blockID).scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+      })
+}
