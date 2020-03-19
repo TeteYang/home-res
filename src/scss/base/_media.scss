@@ -24,6 +24,14 @@
     .header .toggle-btn_style{
         left: 77%;
     }
+    .main-projects__tab .main-projects__tab_item-style{
+        display: grid;
+        justify-items: center;
+    }
+    .main-projects__tab .main-projects__tab_item-style .img{
+        width: 100%;
+        height: 50vh;
+    }
 }
 @media(max-width: 576px){
    .skills .skills__item{
@@ -64,6 +72,10 @@
     }
     .skills .skills__item{
         max-width: 45vh;
+    }
+    .main-projects__tab .main-projects__tab_item-style .img{
+        width: 100%;
+        height: 36vh;
     } 
 }
 @media(max-width: 390px){
