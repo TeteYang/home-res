@@ -5,7 +5,7 @@ const cleanCSS = require('gulp-clean-css');
 const autoprefixer = require('gulp-autoprefixer');
 const rename = require("gulp-rename");
 const htmlmin = require('gulp-htmlmin');
-
+const argv = require('minimist')(process.argv.slice(2));
 
 gulp.task('server', function() {
 
@@ -16,6 +16,7 @@ gulp.task('server', function() {
     });
 
     gulp.watch("src/*.html").on('change', browserSync.reload);
+    console.log(argv);
 });
 
 gulp.task('styles', function() {
