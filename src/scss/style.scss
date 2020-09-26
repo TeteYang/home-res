@@ -2,6 +2,13 @@
     background-color: #232325;
 }
 
+.action{
+    display: block;
+}
+.hidden{
+    display: none;
+}
+
 @import "./base/fonts";
 @import "./base/media";
 @import "./base/mixins";
@@ -15,4 +22,5 @@
 @import "./bloks/skills";
 @import "./bloks/contacts";
 @import "./bloks/_pageup";
+@import "./bloks/calc";
 

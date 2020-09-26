@@ -15,6 +15,9 @@
     max-width: 75vw;
     margin: 5vh auto;
     }
+    &_style_active{
+        display: block;
+    }
     &__tab_style{
         margin: 0 0 15vh 0;
     }
@@ -39,8 +42,14 @@
         padding: 5px;
         border-radius: 3px;
     }
-    &__tab_box span:first-child{
+    &__tab_box span{
         margin: 0 5px 0 0;
+    }
+    &__tab_grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: 20px 0;
+        grid-gap: 5px 0;
     }
 }
 .main-projects__tab_style .img{
@@ -51,4 +60,20 @@
     height: 40vh;
     border-radius: 5px;
     border: 1px solid #fd1a15;
+}
+.active{
+    display: block;
+}
+
+.hidden{
+    display: none;
+}
+
+.card-header{
+    padding: 7px 0 2px 5px;
+    ul{
+        font-size: 19px;
+        margin: 0 auto;
+        width: 25vw;
+    }
 }

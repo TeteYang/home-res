@@ -14,21 +14,26 @@ let toggler = document.querySelector('input'),
     linkSkills = document.querySelector('.link-skills');
     greetH1 = document.querySelector('.greeting__h1'),
     greetH2 = document.querySelector('.greeting__h2'),
-    greetH3 = document.querySelector('.greeting__h3');
-    allProjects = document.querySelector('.all-projects');
-    boxSkills = document.querySelector('.skills__phr');
-    boxContact = document.querySelector('.contact__phr');
+    greetH3 = document.querySelector('.greeting__h3'),
+    allProjects = document.querySelector('.projects-text'),
+    boxSkills = document.querySelector('.skills_phr'),
+    boxContact = document.querySelector('.contact_phr'),
+    maket = document.querySelectorAll('.maket'),
+    seeCode = document.querySelectorAll('.see-code');
+
 const greetItemEn = {
     linkHomeEn: 'Home',
     linkProjectEn: 'Progects',
     linkContactEn: 'Contact',
-    linkSkillsEn: 'My Skills',
+    linkSkillsEn: 'Skills',
     welcomeEn: 'Welcome',
     nameEn: 'My name is Anna',
     profEn: "I'm junior frontend developer",
-    allProjectsEn: 'These are some of my projects',
+    allProjectsEn: 'My projects',
     boxSkillsEn: 'Skills',
-    boxContactEn: 'Get in touch'
+    boxContactEn: 'Get in touch',
+    maketEn: 'Site layout',
+    seeCodeEn: 'View code on',
 }
 const greetItemRu = {
     linkHomeRu: 'Главная',
@@ -38,14 +43,41 @@ const greetItemRu = {
     welcomeRu: 'Добро пожаловать',
     nameRu: 'Меня зовут Анна',
     profRu: 'junior frontend developer',
-    allProjectsRu: 'Здесь собраны некоторые из моих проектов',
+    allProjectsRu: 'Проекты',
     boxSkillsRu: 'Мои Навыки',
-    boxContactRu: 'Связь со мной'
-
+    boxContactRu: 'Связь со мной',
+    maketRu: 'Макет сайта',
+    seeCodeRu: 'Посмотреть код',
 }
 
-const {linkHomeEn, linkProjectEn, linkContactEn, linkSkillsEn, welcomeEn, nameEn, profEn, allProjectsEn, boxSkillsEn, boxContactEn} = greetItemEn;
-const {linkHomeRu, linkProjectRu, linkContactRu, linkSkillsRu,welcomeRu, nameRu, profRu, allProjectsRu, boxSkillsRu, boxContactRu} = greetItemRu;
+const { linkHomeEn,
+        linkProjectEn,
+        linkContactEn,
+        linkSkillsEn,
+        welcomeEn,
+        nameEn,
+        profEn,
+        allProjectsEn,
+        boxSkillsEn,
+        boxContactEn,
+        maketEn,
+        seeCodeEn,
+} = greetItemEn;
+
+const { linkHomeRu,
+    linkProjectRu,
+    linkContactRu,
+    linkSkillsRu,
+    welcomeRu,
+    nameRu,
+    profRu,
+    allProjectsRu,
+    boxSkillsRu,
+    boxContactRu,
+    maketRu,
+    seeCodeRu,
+} = greetItemRu;
+
 toggler.addEventListener('change', function(e){
     if(e.target.checked){
         linkHome.textContent = linkHomeEn;
@@ -58,6 +90,13 @@ toggler.addEventListener('change', function(e){
         allProjects.textContent = allProjectsEn;
         boxSkills.textContent = boxSkillsEn;
         boxContact.textContent = boxContactEn;
+        seeCode.forEach(item =>{
+            item.textContent = seeCodeEn;
+        });
+        maket.forEach(item =>{
+            item.textContent = maketEn;
+        })
+
     } else{
         linkHome.textContent = linkHomeRu;
         linkProject.textContent = linkProjectRu;
@@ -69,13 +108,18 @@ toggler.addEventListener('change', function(e){
         allProjects.textContent = allProjectsRu;
         boxSkills.textContent = boxSkillsRu;
         boxContact.textContent = boxContactRu;
-    }  
+        seeCode.forEach(item =>{
+            item.textContent = seeCodeRu;
+        });
+        maket.forEach(item =>{
+            item.textContent = maketRu;
+        })
+    }
 });
 
 //scroll up
 
 let upPage = document.querySelector('a[href*="#up"]');
-console.log(upPage);
 window.addEventListener('scroll', whereScroll);
 
 function whereScroll(){
@@ -98,3 +142,37 @@ function slowScroll(e){
         block: 'start'
       })
 }
+
+//tabs
+
+const navItem = document.querySelectorAll('.nav-item');
+const listProjects = document.querySelectorAll('.list-projects');
+
+
+navItem.forEach((item, i)=>{
+    item.addEventListener('click', (e)=>{
+        e.preventDefault();
+        if(e.target.className == 'nav-link'){
+            show(i);
+        }
+    })
+});
+
+
+function show(index){
+    listProjects.forEach((item, i)=>{
+        if(index == i){
+            item.classList.add('action');
+            item.classList.remove('hidden');
+        }
+        else{
+            item.classList.add('hidden');
+            item.classList.remove('action');
+        }
+    })
+}
+
+
+
+
+

@@ -1,0 +1,113 @@
+@media(max-width: 992px){
+    body .calc{
+        width: 39vw;
+        height: 60vh;
+        .delete{
+            width: 7vw;
+        }
+    }
+}
+@media(max-width: 768px){
+    body .calc{
+        width: 36vw;
+        height: 60vh;
+        .delete{
+            width: 7vw;
+        }
+    }
+}
+@media(max-width: 576px){
+    body .calc{
+        width: 50vw;
+        height: 60vh;
+        .delete{
+            width: 15vw;
+        }
+    }
+}
+@media(max-width: 500px){
+    body .calc{
+        width: 75vw;
+        height: 60vh;
+    }
+}
+
+.calc{
+    width: 25vw;
+    height: 60vh;
+    // margin: 0 auto;
+    background-color: silver;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #b7e066db;
+    &__layout{
+        display: grid;
+        grid-gap: 5px;
+        justify-content: center;
+        grid-template-columns: 80%;
+        margin: 10px 0 10px 0;
+        border: 3px solid #77b74f;
+        padding: 3px;
+    }
+    &__result{
+        width: 100%;
+        height: 4vh;
+        background: #d9fb959c;;
+        border: 0;
+        text-align: right;
+        padding: 3px;
+    }
+    &__inputCalc_box{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__inputCalc{
+        padding: 12px 0 0 0;
+    }
+}
+.delete{
+    width: 5vw;
+    height: 6vh;
+    border: 0;
+    background: #fa6262f2;
+    border-radius: 10px;
+}
+.step{
+    background: #35ace4c7;
+    border: 0;
+    border-radius: 20px;
+    font-size: 19px;
+    height: 8vh;
+    margin: 3px 0 0 0;
+}
+.equally{
+    background: #f0bb1d;
+    border: 2px solid #e6d00e;
+}
+.btn-calc{
+    height: 37vh;
+    display: grid;
+    grid-template-columns: 70% 14%;
+    justify-content: center;
+    grid-gap: 3px;
+.numbers__layout{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 2px;
+}
+.numbers__btn{
+    height: 9vh;
+    background: #ffff0085;
+    border: 0;
+    margin-bottom: 2px;
+    border: 2px solid #77b74f85;
+}
+}
+.numbers__layout:nth-child(4){
+    .numbers__btn:nth-child(1){
+        border-radius: 0 0 0 10px;
+    }
+}
+button:focus {
+    outline: none;
+}

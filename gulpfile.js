@@ -5,6 +5,8 @@ const cleanCSS = require('gulp-clean-css');
 const autoprefixer = require('gulp-autoprefixer');
 const rename = require("gulp-rename");
 const htmlmin = require('gulp-htmlmin');
+const minify = require('gulp-minify');
+const imagemin = require('gulp-imagemin');
 const argv = require('minimist')(process.argv.slice(2));
 
 gulp.task('server', function() {
@@ -32,6 +34,7 @@ gulp.task('styles', function() {
 gulp.task('watch', function() {
     gulp.watch("src/scss/**/*.+(scss|sass|css)", gulp.parallel('styles'));
     gulp.watch("src/*.html").on('change', gulp.parallel('html'));
+    gulp.watch(['src/js/**/*.js', 'src/js/**/*.mjs']).on('change', gulp.parallel('scripts'));
 });
 
 gulp.task('html', () => {
@@ -41,7 +44,8 @@ gulp.task('html', () => {
   });
 
 gulp.task('scripts', function(){
-    return gulp.src('src/js/**/*.js')
+    return gulp.src(['src/js/**/*.js', 'src/js/**/*.mjs'])
+    .pipe(minify())
     .pipe(gulp.dest('dist/js'));
 });
 gulp.task('fonts', function(){
@@ -56,6 +60,7 @@ gulp.task('icons', function(){
 
 gulp.task('image', function(){
     return gulp.src('src/img/**/*')
+        .pipe(imagemin())
         .pipe(gulp.dest('dist/img'));
 });
 

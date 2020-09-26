@@ -1,6 +1,6 @@
 .skills{
     &_style{
-        min-height: 98vh;
+        height: 95vh;
         background-color: #232325;
         padding: 25vh 0 0 0;
     }
@@ -16,6 +16,7 @@
         margin: 5vh 0 0 0;
     }
     &__item{
+        text-align: left;
         max-width: 75vh;
         margin: 0 auto;
         list-style: none;
