@@ -29,7 +29,7 @@ const greetItemEn = {
     welcomeEn: 'Welcome',
     nameEn: 'My name is Anna',
     profEn: "I'm junior frontend developer",
-    allProjectsEn: 'My projects',
+    allProjectsEn: 'Projects',
     boxSkillsEn: 'Skills',
     boxContactEn: 'Get in touch',
     maketEn: 'Site layout',
@@ -39,12 +39,12 @@ const greetItemRu = {
     linkHomeRu: 'Главная',
     linkProjectRu: 'Проекты',
     linkContactRu: 'Контакты',
-    linkSkillsRu: 'Мои Навыки',
+    linkSkillsRu: 'Навыки',
     welcomeRu: 'Добро пожаловать',
     nameRu: 'Меня зовут Анна',
     profRu: 'junior frontend developer',
     allProjectsRu: 'Проекты',
-    boxSkillsRu: 'Мои Навыки',
+    boxSkillsRu: 'Навыки',
     boxContactRu: 'Связь со мной',
     maketRu: 'Макет сайта',
     seeCodeRu: 'Посмотреть код',
@@ -171,7 +171,6 @@ function show(index){
         }
     })
 }
-
 
 
 
